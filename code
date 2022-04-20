@@ -7,7 +7,7 @@ int main()
 cin>>x; //x=7;
 func_1(x);
 cout<<x;
-    
+  //hello dg  
 }
 void func_1(int x)
 {
