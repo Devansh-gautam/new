@@ -1,0 +1,93 @@
+#include <iostream>
+
+using namespace std;
+void func_1(int);
+int main()
+{int x;
+cin>>x; //x=7;
+func_1(x);
+cout<<x;
+    
+}
+void func_1(int x)
+{
+    x=x+5;
+    cout<<x;
+}
+## same output 1 storage
+#include <iostream>
+
+using namespace std;
+void func_1(int*);//value at
+int main()
+{int x;
+cin>>x; //x=7;
+func_1(&x);//address of
+cout<<x;
+    
+}
+void func_1(int*x)
+{
+    *x=*x+5;
+    cout<<*x;
+}
+
+##relationa operator
+#include <iostream>
+
+using namespace std;
+void func_1(int ,int);
+int main ()
+{
+  
+int x;
+cin>>x; 
+
+int y;
+cin>>y; 
+ func_1(x,y);
+}
+void func_1(int x,int y){
+if(x>y){
+    cout<<x;
+    
+}
+if (y>x){
+    cout<<y;
+    
+}
+cout<<"equal input";
+    
+}
+
+##3 function
+#include <iostream>
+
+using namespace std;
+void func_1(int, int, int);
+int main ()
+{
+  
+int x;
+cin>>x ; 
+
+int y;
+cin>>y; 
+int z;
+cin>>z; 
+ func_1(x,y,z);
+}
+void func_1(int x,int y, int z){
+if(x>y && x>z){
+    cout<<x;
+    
+}
+if (y>x && y>z){
+    cout<<y;
+    
+}
+else{
+    cout<< z;
+    
+}
+}
