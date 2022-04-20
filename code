@@ -86,6 +86,10 @@ if (y>x && y>z){
     cout<<y;
     
 }
+elif{
+    cout<<x;
+}
+
 else{
     cout<< z;
     
